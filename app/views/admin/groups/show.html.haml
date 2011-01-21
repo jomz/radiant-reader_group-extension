@@ -1,10 +1,10 @@
-- include_stylesheet 'admin/reader_group'
+- include_stylesheet 'admin/group'
 - body_classes << "reversed"
 
 - render_region :header do |header|
   - header.title do
     %h1
-      Group:
+      = t('group') + ':'
       = @group.name
 
 - render_region :main do |main|

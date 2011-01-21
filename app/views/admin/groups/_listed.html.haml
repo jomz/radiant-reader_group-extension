@@ -6,7 +6,7 @@
           = link_to group.name, admin_group_url(group)
           %br
           %span.notes
-            = truncate_words(group.description, 40)
+            = group.description
     - tbody.home_cell do
       %td.home
         - if group.homepage
@@ -22,5 +22,5 @@
     - tbody.modify_cell do
       %td.actions
         = link_to_unless_current image('plus') + ' ' + t('add_members'), new_admin_group_group_invitation_url(group), :class => 'action'
-        = link_to_unless_current image('minus') + ' ' + t('remove group'), admin_group_url(group, :method => 'delete', :confirm => "confirm_remove_group", :name => group.name), :class => 'action'
+        = link_to_unless_current image('minus') + ' ' + t('remove_group'), admin_group_url(group), :method => 'delete', :confirm => "confirm_remove_group", :name => group.name, :class => 'action'
         

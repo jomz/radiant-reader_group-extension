@@ -1,12 +1,12 @@
 %tr
   - render_region :thead do |thead|
     - thead.name_header do
-      %th.group Name
+      %th.group= t('name')
     - thead.home_header do
-      %th.home Home page
+      %th.home= t('home_page')
     - thead.members_header do
-      %th.members Members
+      %th.members= t('group_members')
     - thead.pages_header do
-      %th.pages Pages
+      %th.pages= t('pages')
     - thead.modify_header do
-      %th.modify Modify
+      %th.modify= t('modify')

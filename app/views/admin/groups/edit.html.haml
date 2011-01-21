@@ -1,8 +1,7 @@
 - include_stylesheet('admin/group')
 - render_region :main do |main|
   - main.edit_header do
-    %h1 
-      Edit group
+    %h1= t("edit_group") 
       
   - main.edit_form do
     = render :partial => 'form'
