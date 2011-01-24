@@ -1,6 +1,9 @@
 class Group < ActiveRecord::Base
 
-  is_site_scoped if defined? ActiveRecord::SiteNotFound
+#  is_site_scoped if defined? ActiveRecord::SiteNotFound
+  def is_site_scoped
+    false
+  end
   default_scope :order => 'name'
 
   belongs_to :created_by, :class_name => 'User'
