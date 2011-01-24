@@ -12,8 +12,8 @@ nl:
   new_group: "nieuwe groep"
   none: "geen"
   page_private: "Sorry, je hebt geen toestemming om deze pagina te bekijken."
+  page_not_public: "De pagina die je wil bezoeken is niet publiek. Gelieve in te loggen, daarna sturen we je door naar de gevraagde pagina."
   private_pages: "Gekoppelde paginas"
   public_if_no_groups: "Laat alle groepen ongekoppeld om de pagina publiek te laten"
   remove_group: "Groep verwijderen"
   subscriptions: "inschrijvingen"
-  
