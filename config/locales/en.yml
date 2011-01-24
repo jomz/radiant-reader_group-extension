@@ -12,8 +12,8 @@ en:
   new_group: "new group"
   none: "none"
   page_private: "Sorry: you don't have permission to view that page."
+  page_not_public: "The page you have requested is not public. Please log in, and if your account has the necessary permission you will be taken straight there."
   private_pages: "Private pages"
   public_if_no_groups: "Leave all groups unchecked for public access"
   remove_group: "Remove group"
   subscriptions: "subscriptions"
-  
