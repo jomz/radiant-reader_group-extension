@@ -36,9 +36,9 @@
       %h3
         =t('group_members').titlecase
       - readers = Reader.find(:all)
-      - total = readers.count
-      - column_length = (readers.count-1) / 2
-      - columns = [readers[0..column_length], readers[column_length+1..readers.count]]
+      - total = readers.size
+      - column_length = (readers.size-1) / 2
+      - columns = [readers[0..column_length], readers[column_length+1..readers.size]]
       - columns.each do |column|
         %ul.column
           - column.each do |reader|
